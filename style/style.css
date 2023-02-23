@@ -1,31 +1,290 @@
+@font-face {
+    font-family: "SF_Text";
+    src: url("../fonts/SF_Pro.OTF") format("opentype");
+  }
+
+  @font-face {
+    font-family: "SF_Italic";
+    src: url("../fonts/SF_Italic.OTF") format("opentype");
+  }
+
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-.container header  {
-    background-color: rgba(0, 0, 0, 0.6);
+
+.container {
+    display: flex;
+    flex-direction: column;
+    background: whitesmoke;
+}
+
+.container header {
+    background-color: rgba(16, 16, 16, 1);
+    position: fixed;
+    width: 100%;
 }
 
 .container header nav {
-    padding: 15px 30px;
+    align-items: center;
+    justify-content: center;
+}
+
+.container header nav ul {
+    display: flex;
+    padding: 14px 0px;
+}
+
+.container header nav ul li {
+    list-style-type: none;
+}
+
+.container header nav ul li a  {
+    text-decoration: none;
+    color: rgb(179, 179, 179);
+    padding: 15px;
+    font-size: 16px;
+}
+
+.container header nav ul li a:hover  {
+    color: red;
+    background-color: pink;
+}
+
+/**Icon Modify **/
+.container header nav ul .logo {
+    margin-right: 190px;
+}
+.container header nav ul li a .fa-brands.fa-apple {
+    font-size: 20px;
+    color: rgb(231, 231, 231);
+    
+}
+
+/*** Hide List ***/
+.container header nav ul .categories {
+    display: none;
+}
+
+
+/** All Articles **/
+
+.container article {
+    margin-top: 10px;
+    background: papayawhip;
+    height: 80vh;
+    font-family: "SF_Text", Arial, Helvetica, sans-serif;
+}
+
+.container .fa-solid.fa-chevron-right {
+    color: #0066CC;
+}
+
+.container article .text {
+    padding: 58px 40px 10px 40px;
+    background-color: whitesmoke;
+    text-align: center;
+}
+
+
+
+.container main .ads .ad_message {
+    text-align: center;
+    padding-top: 40px;
+}
+
+.container main .ads .ad_message h1, h2 {
+    letter-spacing: 2px;
+}
+
+.container main .ads .ad_message h1 {
+    font-size: 33px;
+}
+
+.container main .ads .ad_message h2 {
+    font-size: 18px;
+}
+
+.container main .ads .ad_message .links {
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 1.5px;
+}
+
+.container main .ads .ad_message .links p {
+    margin: 0px 15px;
+}
+
+
+
+
+
+
+/** Article 1 **/
+.container main a {
+    text-decoration: none;
+    color: #0066CC;
+}
+
+.container main .hero {
+    background: none;
+    margin: 0;
+    margin-bottom: 10px;
+    height: 100%;
+}
+
+.container main .hero .text {
+    padding: 58px 40px 10px 40px;
+    background-color: whitesmoke;
+    text-align: center;
+}
+
+.container main .hero .text p {
+    line-height: 1.5;
+    font-size: 13.3px;
+    letter-spacing: 1px;
+}
+
+.container main .hero .ads {
+    height: 90vh;
+    background: url("../img/hero.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.container main .hero .ads.ads_1 .ad_message h2, h1 {
+    color: white;
+}
+
+/* .container main .hero .ads .ad_message {
+    text-align: center;
+    padding-top: 40px;
+}
+
+.container main .hero .ads .ad_message h1, h2 {
+    color: white;
+    letter-spacing: 2px;
+}
+
+.container main .hero .ads .ad_message h1 {
+    font-size: 33px;
+}
+
+.container main .hero .ads .ad_message h2 {
+    font-size: 18px;
+}
+
+.container main .hero .ads .ad_message .links {
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 1.5px;
+}
+
+.container main .hero .ads .ad_message .links p {
+    margin: 0px 15px;
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+/** Article 2 **/
+
+
+/* .container header  {
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 100% ;
+    position: fixed;
+}
+
+.container header nav {
+    padding: 15px 0px;
+    align-items: center;
 }
 
 .container header nav ul {
     display: flex;
     align-items: center;
     justify-content: center;
+    align-items: center;
 }
 
 .container header nav ul li {
-    margin: 0 18px;
+    margin: 0 25px;
     list-style-type: none;
 }
 
 .container header nav ul li a  {
     font-family: monospace;
     text-decoration: none;
-    color: whitesmoke;
-    
+    color: rgb(212, 212, 212);
+    font-size: 14px;
+    font-family: "SF_Text";
+    font-weight: lighter;
+}
+
+.container header nav ul li a .fa-brands.fa-apple {
+    font-size: 19px;
+    color: rgb(207, 207, 207);
+}
+ */
+
+/** Article 2 **/
+
+.container main .image_1 {
+    background: url("../img/image1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.container main .image_1 .ads.ads_2 .ad_message h1 {
+    color: #101010;
+}
+
+.container main .image_1 .ads.ads_2 .ad_message h2 {
+    color: #101010;
+}
+
+
+/** Article 3 **/
+
+.container main .image_2 {
+    background: url("../img/image2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.container main .image_2 .ads.ads_3 .ad_message h1 {
+    color: white;
+    font-size: 24px;
+}
+
+.container main .image_2 .ads.ads_3 .ad_message h3 {
+    color: rgb(209, 6, 6);
+    margin-bottom: 10px;
+    font-size: 9px;
+    letter-spacing: 2.5px;
+}
+
+
+.container main .image_2 .ads.ads_3 .ad_message h2 {
+    color: white;
+    font-size: 15px;
 }
