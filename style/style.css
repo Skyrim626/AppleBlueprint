@@ -89,7 +89,7 @@
 }
 
 .container .fa-solid.fa-chevron-right {
-    color: #0066CC;
+    color: #2997FF;
 }
 
 .container article .text {
@@ -137,7 +137,7 @@
 /** Article 1 **/
 .container main a {
     text-decoration: none;
-    color: #0066CC;
+    color: #2997FF;
 }
 
 .container main .hero {
@@ -470,4 +470,204 @@ footer .links .copyright .footer-links ul li a  {
 
 footer .links .copyright .flag {
     display: none;
+}
+
+
+
+
+
+
+
+
+
+@media only screen and (min-width: 768px){
+    
+    
+    .container header nav ul {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .container header nav ul li {
+        flex-grow: 0;
+    }
+
+    .container header nav ul li a {
+        padding: 25px;
+        font-size: 14px;
+    }
+
+    .container header nav ul .logo {
+        flex-grow: 0;
+    }
+
+    .container header nav ul .categories {
+        display: inline;
+    }
+
+    .container header nav ul .bars {
+        display: none;
+    }
+
+
+    /** All Articles **/
+    .container main .hero .text p {
+        font-size: 16px;
+        padding: 9px;
+    }
+
+    .container main article .ads .ad_message > h1 {
+        font-size: 4em;
+    }  
+
+    .container main article .ads .ad_message > h2 {
+        font-size: 2em;
+    }
+
+    .container main article .ads .ad_message .links > p {
+        font-size: 22px;
+    }
+
+
+    /** Article 2 **/
+    .container main .image_2 .ads.ads_3 .ad_message h1 {
+        color: white;
+        font-size: 4em;
+    }
+
+    .container main .image_2 .ads.ads_3 .ad_message h2 {
+        color: white;
+        font-size: 2em;
+    }
+
+    .container main .image_2 .ads.ads_3 .ad_message h3 {
+        font-size: 1.5em;
+    }
+
+
+    /** Flex Box Article **/
+    .container main .ad_images  {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .container main .ad_images .section {
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
+        width: 100%;
+    }
+
+    .container main .ad_images .section .box {
+        margin: 10px;
+    }
+
+
+    /** Fonts **/
+    .container main .ad_images .section .box.box1 .ads .ad_message > h1{
+        font-size: 60px;
+    }
+
+    .container main .ad_images .section .box.box2 .ads .ad_message > h1{
+        font-size: 60px;
+    }
+
+    .container main .ad_images .section .box.box3 .ads .ad_message > h1{
+        font-size: 60px;
+    }
+
+    .container main .ad_images .section .box.box4 .ads .ad_message > h1{
+        font-size: 60px;
+    }
+
+    .container main .ad_images .section .box.box5 .ads .ad_message > h1{
+        font-size: 60px;
+    }
+    
+    .container main .ad_images .section .box.box6 .ads .ad_message > h1{
+        font-size: 60px;
+    }
+
+
+    /** Footer **/
+    .container footer .links {
+        padding: 30px 200px;
+    }
+
+    .container footer .links .wrapper {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .container footer .links .link a .category {
+        color: #101010;
+    }
+
+    .container footer .links .link ul {
+        display: block;
+    }
+
+   
+
+    /** Hide plus icon & HR & Country**/
+    .container footer .links .link a i {
+        display: none;
+    }
+
+    .container footer .links .link hr {
+        display: none;
+    }
+
+    .container footer .country {
+        display: none;
+    }
+
+    .container footer .copyright .flag {
+        display: block;
+    }
+
+
+    /** Footer links **/
+    .container footer .links .link .cat {
+        margin-top: 7px;
+    }
+
+    .container footer .links .link ul a:hover {
+        text-decoration: underline;
+        color: #0066CC;
+    }
+
+    .container footer .contact {
+        margin: 15px 0;
+    }
+
+    .container footer .contact a {
+        text-decoration: underline;
+    }
+
+    /** Show HR **/
+    .container footer .line-rule {
+        display: block;
+        margin: 0 0 15px 0;
+    }
+
+    /** Finale **/
+    .container footer .copyright {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .container footer .copyright .footer-links ul li {
+        font-size: 15px;
+        line-height: 0%;
+        margin: 0 15px;
+    }
+
+    .container footer .copyright .footer-links ul li a:hover {
+        text-decoration: underline;
+    }
+
 }
