@@ -20,6 +20,7 @@
     display: flex;
     flex-direction: column;
     background: whitesmoke;
+    font-family: "SF_Text", Arial, Helvetica, sans-serif;
 }
 
 .container header {
@@ -85,7 +86,6 @@
     margin-top: 10px;
     /* background: papayawhip; */
     height: 80vh;
-    font-family: "SF_Text", Arial, Helvetica, sans-serif;
 }
 
 .container .fa-solid.fa-chevron-right {
@@ -349,11 +349,9 @@
 }
 
 .container main .ad_images .section .box.box6 .ads .ad_message h1 span {
-   
     margin: 0;
     border: 0;
     padding: 0;
-
     background: linear-gradient(to right, 
     #FF0000, #FFA500, #FFFF00, #008000, #0000FF, #4B0082, #EE82EE);
     -webkit-background-clip: text;
@@ -365,4 +363,111 @@
     margin-top: 10px;
     font-size: 16px;
     
+}
+
+
+/** Footer **/
+footer {
+    margin-top: 10px;
+    background: #f0f0f0;
+}
+
+
+footer .links {
+    padding: 15px;
+}
+
+footer .links ul {
+    display: none;
+}
+
+footer .links li {
+    list-style-type: none;
+}
+
+footer .links a {
+    text-decoration: none;
+}
+
+
+footer .links section hr {
+    border-color: #dfdede;
+}
+
+footer .links section a {
+    display: flex;
+    padding: 8px 0;
+    color: #6E6373;
+}
+
+footer .links section a .category {
+    flex-grow: 15;
+}
+
+footer .links section a i {
+    flex-grow: 1;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+/** Outside P **/
+footer .links .contact, .country {
+    margin-top: 10px;
+    color: #6E6373;
+    font-size: 14px;
+}
+
+footer .links .contact a {
+    color: #0066CC;
+}
+
+footer .links .country {
+    color: #424245;
+}
+
+footer .links .line-rule {
+    display: none;
+}
+
+footer .links .copyright {
+    margin-top: 10px;
+}
+
+footer .links .copyright p {
+    color: #6E6373;
+    font-size: 14px;
+}
+
+
+
+/** Footer Links **/
+
+
+
+footer .links .copyright .footer-links ul {
+    display: flex;
+}
+
+footer .links .copyright .footer-links ul li {
+    font-size: 12px;
+}
+
+footer .links .copyright .footer-links ul li a  {
+    padding: 4px;
+    color: #0066CC;
+}
+
+
+footer .links .copyright .flag {
+    display: none;
 }
