@@ -23,9 +23,16 @@
 }
 
 .container header {
-    background-color: rgba(16, 16, 16, 1);
+    background-color: rgba(16, 16, 16, 0.9);
     position: fixed;
     width: 100%;
+    z-index: 9999;
+    /** Glassmorphism **/
+   /*  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 ); */
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    /* border-radius: 10px; */
+    /* border: 1px solid rgba( 255, 255, 255, 0.18 ); */
 }
 
 .container header nav {
@@ -40,6 +47,7 @@
 
 .container header nav ul li {
     list-style-type: none;
+    flex-grow: 0.1;
 }
 
 .container header nav ul li a  {
@@ -49,14 +57,15 @@
     font-size: 16px;
 }
 
-.container header nav ul li a:hover  {
+/* .container header nav ul li a:hover  {
     color: red;
     background-color: pink;
-}
+} */
 
 /**Icon Modify **/
 .container header nav ul .logo {
-    margin-right: 190px;
+    /* margin-right: 190px; */
+    flex-grow: 10;
 }
 .container header nav ul li a .fa-brands.fa-apple {
     font-size: 20px;
@@ -74,7 +83,7 @@
 
 .container article {
     margin-top: 10px;
-    background: papayawhip;
+    /* background: papayawhip; */
     height: 80vh;
     font-family: "SF_Text", Arial, Helvetica, sans-serif;
 }
@@ -162,88 +171,6 @@
     color: white;
 }
 
-/* .container main .hero .ads .ad_message {
-    text-align: center;
-    padding-top: 40px;
-}
-
-.container main .hero .ads .ad_message h1, h2 {
-    color: white;
-    letter-spacing: 2px;
-}
-
-.container main .hero .ads .ad_message h1 {
-    font-size: 33px;
-}
-
-.container main .hero .ads .ad_message h2 {
-    font-size: 18px;
-}
-
-.container main .hero .ads .ad_message .links {
-    margin-top: 15px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    letter-spacing: 1.5px;
-}
-
-.container main .hero .ads .ad_message .links p {
-    margin: 0px 15px;
-} */
-
-
-
-
-
-
-
-
-
-
-
-
-/** Article 2 **/
-
-
-/* .container header  {
-    background-color: rgba(0, 0, 0, 0.7);
-    width: 100% ;
-    position: fixed;
-}
-
-.container header nav {
-    padding: 15px 0px;
-    align-items: center;
-}
-
-.container header nav ul {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    align-items: center;
-}
-
-.container header nav ul li {
-    margin: 0 25px;
-    list-style-type: none;
-}
-
-.container header nav ul li a  {
-    font-family: monospace;
-    text-decoration: none;
-    color: rgb(212, 212, 212);
-    font-size: 14px;
-    font-family: "SF_Text";
-    font-weight: lighter;
-}
-
-.container header nav ul li a .fa-brands.fa-apple {
-    font-size: 19px;
-    color: rgb(207, 207, 207);
-}
- */
-
 /** Article 2 **/
 
 .container main .image_1 {
@@ -287,4 +214,155 @@
 .container main .image_2 .ads.ads_3 .ad_message h2 {
     color: white;
     font-size: 15px;
+}
+
+
+/** Article 4 (ALL SECTIONS MODIFICATION)**/
+.container main .ad_images { 
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    margin: 0;
+}
+
+.container main .ad_images .section {
+    display: flex;
+    flex-direction: column;
+}
+
+.container main .ad_images .section .box {
+    height: 80vh;
+    margin-top: 10px;
+    background: greenyellow;
+}
+
+
+
+
+/** Box 1 **/
+.container main .ad_images .section .box.box1 {
+    background: url("../img/image4.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.container main .ad_images .section .box.box1 .ads .ad_message h1 {
+    font-size: 28px;
+}
+
+.container main .ad_images .section .box.box1 .ads .ad_message h2 {
+    margin-top: 5px;
+    color: whitesmoke;
+    font-size: 16px;
+}
+
+
+/** Box 2 **/
+.container main .ad_images .section .box.box2 {
+    background: url("../img/image5.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.container main .ad_images .section .box.box2 .ads .ad_message h1 {
+    font-size: 28px;
+}
+.container main .ad_images .section .box.box2 .ads .ad_message h2 {
+    color: whitesmoke;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+
+/** Box 3 **/
+.container main .ad_images .section .box.box3 {
+    background: url("../img/image6.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.container main .ad_images .section .box.box3 .ads .ad_message h2 {
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+
+
+/** Box 4 **/
+.container main .ad_images .section .box.box4 {
+    background: url("../img/image7.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+}
+
+.container main .ad_images .section .box.box4 .ads {
+    position: relative;
+    margin: auto;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 100px;
+}
+
+.container main .ad_images .section .box.box4 .ads .ad_message h2 {
+    font-size: 16px;
+    margin-top: 10px;
+    color: whitesmoke;
+}
+
+
+
+
+/** Box 5 **/
+.container main .ad_images .section .box.box5 {
+    background: url("../img/image8.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+}
+
+.container main .ad_images .section .box.box5 .ads .ad_message h1 {
+    color: #101010;
+}
+
+.container main .ad_images .section .box.box5 .ads .ad_message h2 {
+    font-size: 20px;
+    margin-top: 10px;
+    color: #101010;
+}
+
+
+/** Box 6 **/
+
+.container main .ad_images .section .box.box6 {
+    background: url("../img/image9.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+}
+
+.container main .ad_images .section .box.box6 .ads .ad_message h1 span {
+   
+    margin: 0;
+    border: 0;
+    padding: 0;
+
+    background: linear-gradient(to right, 
+    #FF0000, #FFA500, #FFFF00, #008000, #0000FF, #4B0082, #EE82EE);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.container main .ad_images .section .box.box6 .ads .ad_message h2 {
+    color: whitesmoke;
+    margin-top: 10px;
+    font-size: 16px;
+    
 }
